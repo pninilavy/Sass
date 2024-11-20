@@ -1,0 +1,34 @@
+$colorBtn:lightcoral;
+$fontAll: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$sizefont:20px;
+$borderRadius:25px;
+$dierctionHref:none;
+$colorHref:gray;
+$opacityHover:0.5;
+
+@mixin flexCenter($dierction,$size){
+    font-family: $fontAll;
+    font-size:$size;
+    background-color:aquamarine;
+    display: flex;
+    justify-content: $dierction;
+
+}
+@mixin styleClass($color1,$weight,$font,$size,$cursor){
+    color:$color1;
+    font-weight:$weight;
+    font-family: $font;
+    font-size:$size;
+    background-color: lighten($color1,50%);
+    cursor: $cursor;
+}
+@mixin column($col) {
+    width: (100% / 12) * $col;
+    background-color:lightcoral;
+    display: flex;
+    justify-content: center;
+    height:100px;
+    margin: 15px;
+    font-family:$fontAll ;
+    font-size: $sizefont*3;
+ }

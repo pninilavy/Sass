@@ -1,0 +1,7 @@
+button{
+    @include flexCenter(center,15px);
+    background-color: $colorBtn;
+    border-radius:$borderRadius;
+    flex-direction: row;
+
+}

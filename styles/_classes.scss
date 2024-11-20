@@ -1,0 +1,17 @@
+.text-success{
+@include styleClass(rgb(131, 209, 28),500,'Courier New',20px, pointer);
+}
+
+.text-danger{
+    @include styleClass(rgb(28, 209, 59),100,'Segoe UI',30px, pointer);
+}
+
+.text-warning{
+    @include styleClass(rgb(209, 28, 79),700,'Lucida Sans',40px, default);
+    
+}
+.text-info{
+    @include styleClass(rgb(113, 28, 209),900,'Segoe UI',50px,grab);    
+    cursor:grab;
+}
+
